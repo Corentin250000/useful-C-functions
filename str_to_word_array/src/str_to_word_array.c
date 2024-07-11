@@ -8,6 +8,8 @@
 #include <unistd.h>
 #include <stdlib.h>
 
+#include "../include/str_to_word_array.h"
+
 int is_authorized(char c, char *authorized)
 {
     int present = 0;
