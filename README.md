@@ -12,10 +12,18 @@
 
 **Chaque fonction (une par dossier) est accompagnée d'un dossier _includes_ contenant les fichiers .h de la fonction, ainsi d'un dossier _src_ contenant les fichiers sources (.c) de la fonction.**
 
-1. str_to_word_array :
+1. **str_to_word_array :**
 
     - Prend en paramètres la chaîne de caractères comprenant les phrases que l'on veut séparer en mots, ainsi que la liste des caractères autorisés (les autres étant considérés comme des séparateurs de mots).
 
     - Elle retourne un tableau de chaînes de caractères comprenant tous les "mots" (un par chaîne de caractères).
 
     - Attention, la mémoire de la chaîne de caractères autorisés n'est pas libérée, ce sera à vous de la libérer.
+
+2. **read_file :**
+
+    - Lit un fichier donné (son chemin) et retourne une chaîne de caractères contenant le texte.
+
+    - Si le programme, d'une quelconque façon, n'arrive pas à lire le fichier, il retournera le chemin donné en paramètre de la fonction.
+
+    - Attention, puisque le programme utilise la structure _stat_ et la fonction _stat_ pour déterminer la taille de la mémoire à allouer, si _stat_ rencontre un problème ou que le fichier donné est vide, le programme renvoie le chemin donné en paramètre de la fonction.
