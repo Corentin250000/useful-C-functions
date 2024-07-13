@@ -1,4 +1,4 @@
-# USEFUL-FUNCTIONS
+# USEFUL-C-FUNCTIONS
 
 **⚠️ Si vous êtes étudiant _EPITECH_, N'UTILISEZ PAS ces fonctions, cela pourrait être considéré comme de la triche.**
 > Je pense que récupérer un -84 sur votre projet pour ça, cela ne vaut pas le coup 😉.
@@ -11,6 +11,10 @@
 **Toutes les fonctions respectent le _coding style_ (PDF explicatif fourni dans son dossier à la racine) et ne présentent normalement aucune erreur _Valgrind_.**
 
 **Chaque fonction (une par dossier) est accompagnée d'un dossier _includes_ contenant les fichiers .h de la fonction, ainsi d'un dossier _src_ contenant les fichiers sources (.c) de la fonction.**
+
+> Si vous avez une ou plusieurs fonctions _bannies_ (que vous n'avez pas le droit d'utiliser dans votre projet), comme la fonction _stat_ ou _printf_, n'hésitez pas à verifier les fonctions avant de les utiliser.
+
+> Un maximum de fonctions sont réécrites pour éviter ce problème (comme _mystrlen_).
 
 1. **str_to_word_array :**
 
@@ -27,3 +31,13 @@
     - Si le programme, d'une quelconque façon, n'arrive pas à lire le fichier, il retournera le chemin donné en paramètre de la fonction.
 
     - Attention, puisque le programme utilise la structure _stat_ et la fonction _stat_ pour déterminer la taille de la mémoire à allouer, si _stat_ rencontre un problème ou que le fichier donné est vide, le programme renvoie le chemin donné en paramètre de la fonction.
+
+3. **change_base :**
+
+    - Change la base d'un nombre positif donné (base comprise entre 2 et 10).
+    
+    - _base10_to_inferior_base_ prend un nombre et une base, puis renvoie le résultat sous forme de chaîne de caractères.
+
+    - _return_to_base10_ prend une chaîne de caractères (le nombre dans une certaine base) et la base en question, puis renvoie le nombre en base 10 sous forme d'entiers.
+
+    - Attention, aucune gestion d'erreur n'est faite sur les paramètres donnés aux fonctions.
