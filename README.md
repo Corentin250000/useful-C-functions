@@ -46,6 +46,6 @@
 
     - Transforme un nombre entier positif non nul (unsigned int) en une chaîne de caractères (pour faire un affichage graphique en CSFML par exemple).
 
-    - Attention, la fonction _int-to-char_ laisse des zéros au début du résultat si le nombre est inférieur à 1 000 000 000. C'est pourquoi il existe la fonction _remove-zeros_, qui retire les possibles zéros au début de la chaîne de caractères.
+    - Attention, la fonction _int-to-char_ laisse des zéros au début du résultat si le nombre est inférieur à 1 milliard. C'est pourquoi il existe la fonction _remove-zeros_, qui retire les possibles zéros au début de la chaîne de caractères.
     
     - Attention, si vous avez quand même décidé de mettre 0 au départ et que vous passez votre résultat dans cette fonction (_remove-zeros_), vous n'obtiendrez qu'une chaîne vide.
