@@ -10,7 +10,7 @@
 
 **Toutes les fonctions respectent le _coding style_ (PDF explicatif fourni dans son dossier à la racine) et ne présentent normalement aucune erreur _Valgrind_.**
 
-**Chaque fonction (une par dossier) est accompagnée d'un dossier _includes_ contenant les fichiers .h de la fonction, ainsi d'un dossier _src_ contenant les fichiers sources (.c) de la fonction.**
+**Chaque fonction (une par dossier) est accompagnée d'un dossier _includes_ contenant les fichiers .h de la fonction, ainsi d'un dossier _src_ contenant les fichiers sources (.c) de la fonction. _Petite précision, chaque fonction est indépendante des autres. Par exemple, deux fonctions identiques peuvent être réécrite (mystrlen par exemple)._**
 
 > Si vous avez une ou plusieurs fonctions _bannies_ (que vous n'avez pas le droit d'utiliser dans votre projet), comme la fonction _stat_ ou _printf_, n'hésitez pas à verifier les fonctions avant de les utiliser.
 
@@ -41,3 +41,11 @@
     - _return_to_base10_ prend une chaîne de caractères (le nombre dans une certaine base) et la base en question, puis renvoie le nombre en base 10 sous forme d'entiers.
 
     - Attention, aucune gestion d'erreur n'est faite sur les paramètres donnés aux fonctions.
+
+4. **int_to_char :**
+
+    - Transforme un nombre entier positif non nul (unsigned int) en une chaîne de caractères (pour faire un affichage graphique en CSFML par exemple).
+
+    - Attention, la fonction _int-to-char_ laisse des zéros au début du résultat si le nombre est inférieur à 1 000 000 000. C'est pourquoi il existe la fonction _remove-zeros_, qui retire les possibles zéros au début de la chaîne de caractères.
+    
+    - Attention, si vous avez quand même décidé de mettre 0 au départ et que vous passez votre résultat dans cette fonction (_remove-zeros_), vous n'obtiendrez qu'une chaîne vide.
