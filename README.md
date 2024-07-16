@@ -10,7 +10,7 @@
 
 **Toutes les fonctions respectent le _coding style_ (PDF explicatif fourni dans son dossier à la racine) et ne présentent normalement aucune erreur _Valgrind_.**
 
-**Chaque fonction (une par dossier) est accompagnée d'un dossier _includes_ contenant les fichiers .h de la fonction, ainsi d'un dossier _src_ contenant les fichiers sources (.c) de la fonction. _Petite précision, chaque fonction est indépendante des autres. Par exemple, deux fonctions identiques peuvent être réécrite (mystrlen par exemple)._**
+**Chaque fonction (une par dossier) est accompagnée d'un dossier _includes_ contenant les fichiers .h de la fonction, ainsi d'un dossier _src_ contenant les fichiers sources (.c) de la fonction. _Petite précision, chaque fonction est indépendante des autres. Par exemple, deux fonctions identiques peuvent être réécrite (my-strlen par exemple)._**
 
 > Si vous avez une ou plusieurs fonctions _bannies_ (que vous n'avez pas le droit d'utiliser dans votre projet), comme la fonction _stat_ ou _printf_, n'hésitez pas à verifier les fonctions avant de les utiliser.
 
