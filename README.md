@@ -14,7 +14,7 @@
 
 > Si vous avez une ou plusieurs fonctions _bannies_ (que vous n'avez pas le droit d'utiliser dans votre projet), comme la fonction _stat_ ou _printf_, n'hésitez pas à verifier les fonctions avant de les utiliser.
 
-> Un maximum de fonctions sont réécrites pour éviter ce problème (comme _mystrlen_).
+> Un maximum de fonctions sont réécrites pour éviter ce problème (comme _my-strlen_).
 
 1. **str_to_word_array :**
 
