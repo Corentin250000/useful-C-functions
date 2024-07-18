@@ -5,7 +5,6 @@
 > Je pense que récupérer un -84 sur votre projet pour ça, cela ne vaut pas le coup 😉.
 
 **Cependant, si vous décidez d'utiliser ces fonctions, je me dédommage de toutes responsabilités si vous êtes pris la main dans le sac.**
-_Pour les autres (non étudiant Epitech), vous êtes libres d'utiliser le code._
 
 -   -   -
 
