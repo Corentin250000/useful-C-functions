@@ -73,9 +73,9 @@
 
     - Transforme un nombre entier positif non nul en une chaîne de caractères (pour faire un affichage graphique en CSFML par exemple).
 
-    - Attention, la fonction `int-to-char` laisse des zéros au début du résultat si le nombre est inférieur à 1 milliard. C'est pourquoi il existe la fonction `remove-zeros`, qui retire les possibles zéros au début de la chaîne de caractères.
+    - Attention, la fonction `int_to_char` laisse des zéros au début du résultat si le nombre est inférieur à 1 milliard. C'est pourquoi il existe la fonction `remove_zeros`, qui retire les possibles zéros au début de la chaîne de caractères.
     
-    - Attention, si vous avez quand même décidé de mettre 0 au départ et que vous passez votre résultat dans cette fonction (`remove-zeros`), vous n'obtiendrez qu'une chaîne vide.
+    - Attention, si vous avez quand même décidé de mettre 0 au départ et que vous passez votre résultat dans cette fonction (`remove_zeros`), vous n'obtiendrez qu'une chaîne vide.
 
 5. ### my_atoi
 
