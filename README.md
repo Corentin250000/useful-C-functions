@@ -55,12 +55,19 @@
 
 3. ### change_base
 
-    - **Prototype :** `char *base10_to_inferior_base(unsigned long long nb, int base);`
-    - **Prototype :** `unsigned long long return_to_base10(char *nb, int base);`
+    - Bases **inférieures** à 10 (dossier **_2_to_10_**) :
 
-    - Change la base d'un nombre positif donné (base comprise entre 2 et 10).
+        - **Prototype :** `char *base10_to_inferior_base(unsigned long long nb, int base);`
+        - **Prototype :** `unsigned long long return_to_base10(char *nb, int base);`
+
+    - Bases **supérieures** à 10 (dossier **_10_to_16_**) :
+
+        - **Prototype :** `char *base10_to_superior_base(unsigned long long nb, int base);`
+        - **Prototype :** `unsigned long long return_to_base10(char *nb, int base);`
+
+    - Change la base d'un nombre positif donné (base comprise entre 2 et 16).
     
-    - `base10_to_inferior_base` prend un nombre et une base, puis renvoie le résultat sous forme de chaîne de caractères.
+    - `base10_to_inferior_base` et `base10_to_superior_base` prend un nombre et une base, puis renvoie le résultat sous forme de chaîne de caractères.
 
     - `return_to_base10` prend une chaîne de caractères (le nombre dans une certaine base) et la base en question, puis renvoie le nombre en base 10 sous forme d'entiers.
 

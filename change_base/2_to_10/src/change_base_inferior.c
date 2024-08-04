@@ -7,7 +7,7 @@
 
 #include <stdlib.h>
 
-#include "../includes/change_base.h"
+#include "../includes/change_base_inferior.h"
 
 int my_strlen(char *str)
 {
