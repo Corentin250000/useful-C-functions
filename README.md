@@ -22,6 +22,8 @@
 
 - [my_atoi](#my_atoi)
 
+- [strings_are_equals](#strings_are_equals)
+
 ## Les fonctions
 
 **Toutes les fonctions respectent le _coding style_ (PDF explicatif fourni dans son dossier à la racine) et ne présentent normalement aucune erreur _Valgrind_.**
@@ -93,5 +95,13 @@
     - En cas de caractères non numérique au début de la chaîne de caractères (ou en deuxième place si présence signe '-' au début), la fonction retourne 0. Sinon, elle retourne la valeur du nombre avant un possible caractère non désiré.
     
     - Par exemple, `"1234"` renvoie `1234`, `"-123n4"` renvoie `-123` et `"-T123"` renvoie `0`.
+
+6. ### strings_are_equals
+
+    - **Prototype :** `int strings_are_equals(char *s1, char *s2);`
+
+    - **Compare** deux chaînes de caractères pour savoir si elles sont **égales**. La fonction retourne **1** si elles sont égales, sinon elle retourne **0**.
+
+    - **Attention**, si les deux chaînes de caractères ne sont pas de **tailles égales**, la fonctions retournera **0**. Exemple, si **une des deux** chaînes de caractères est **vide**. Par contre, si **les deux sont vides**, la fonction retournera **1**.
 
 [Retourner en haut](#useful-c-functions)
