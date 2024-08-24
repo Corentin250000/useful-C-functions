@@ -69,7 +69,7 @@
 
     - Change la base d'un nombre positif donné (base comprise entre 2 et 16).
     
-    - `base10_to_inferior_base` et `base10_to_superior_base` prend un nombre et une base, puis renvoie le résultat sous forme de chaîne de caractères.
+    - `base10_to_inferior_base` et `base10_to_superior_base` prennent un nombre et une base, puis renvoie le résultat sous forme de chaîne de caractères.
 
     - `return_to_base10` prend une chaîne de caractères (le nombre dans une certaine base) et la base en question, puis renvoie le nombre en base 10 sous forme d'entiers.
 
