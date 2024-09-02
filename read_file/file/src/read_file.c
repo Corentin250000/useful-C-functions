@@ -19,7 +19,7 @@ size_t size_file(char *path)
 
     verify = stat(path, &s);
     if (verify == -1)
-        return 0;
+        return -1;
     return s.st_size;
 }
 
@@ -30,7 +30,7 @@ char *read_file(char *path)
     char *buffer;
     size_t size = size_file(path);
 
-    if (fd == -1 || size == 0)
+    if (size == 0)
         return path;
     buffer = malloc(sizeof(char) * (size + 1));
     verify = read(fd, buffer, size);

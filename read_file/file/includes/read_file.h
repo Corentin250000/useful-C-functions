@@ -5,6 +5,11 @@
 ** Header file
 */
 
+#include <unistd.h>
+#include <fcntl.h>
+#include <stdlib.h>
+#include <sys/stat.h>
+
 #ifndef READ_FILE_H_
     #define READ_FILE_H_
 

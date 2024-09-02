@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2024
-** tests.c
+** tests_base_inf.c
 ** File description:
 ** units tests
 */

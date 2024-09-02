@@ -30,7 +30,7 @@
 
 **Chaque fonction (une par dossier) est accompagnée d'un dossier _includes_ contenant les fichiers .h de la fonction, ainsi d'un dossier _src_ contenant les fichiers sources (.c) de la fonction. _Petite précision, chaque fonction est indépendante des autres. Par exemple, deux fonctions identiques peuvent être réécrite (_**`my_strlen` **_par exemple)._**
 
-**De plus, chaque fonction est accompagnée d'un _Makefile_, permettant de compiler les tests unitaires des fonctions.**
+**De plus, chaque fonction (sauf `read_stdin`) est accompagnée d'un _Makefile_, permettant de compiler les tests unitaires des fonctions.**
 
 > Si vous avez une ou plusieurs fonctions **_bannies_** (que vous n'avez pas le droit d'utiliser dans votre projet), comme la fonction `stat` ou `printf`, n'hésitez pas à verifier les fonctions avant de les utiliser.
 
