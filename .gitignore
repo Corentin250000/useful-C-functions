@@ -1,2 +1,12 @@
 a.out
 .vscode
+coding-style-reports.log
+unit_tests
+coverage.info
+coverage_filtered.info
+*.gcda
+*.gcno
+*.gcov
+test
+out/
+*.o

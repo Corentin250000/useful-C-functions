@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2024
-** change_base.c
+** change_base_inferior.c
 ** File description:
-** change base
+** change base inferior
 */
 
 #include <stdlib.h>
@@ -55,7 +55,7 @@ char *base10_to_inferior_base(unsigned long long nb, int base)
     return result;
 }
 
-unsigned long long return_to_base10(char *nb, int base)
+unsigned long long return_to_decimal(char *nb, int base)
 {
     int size = my_strlen(nb);
     int power_max = size - 1;

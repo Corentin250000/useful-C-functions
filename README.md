@@ -30,6 +30,8 @@
 
 **Chaque fonction (une par dossier) est accompagnée d'un dossier _includes_ contenant les fichiers .h de la fonction, ainsi d'un dossier _src_ contenant les fichiers sources (.c) de la fonction. _Petite précision, chaque fonction est indépendante des autres. Par exemple, deux fonctions identiques peuvent être réécrite (_**`my_strlen` **_par exemple)._**
 
+**De plus, chaque fonction est accompagnée d'un _Makefile_, permettant de compiler les tests unitaires des fonctions.**
+
 > Si vous avez une ou plusieurs fonctions **_bannies_** (que vous n'avez pas le droit d'utiliser dans votre projet), comme la fonction `stat` ou `printf`, n'hésitez pas à verifier les fonctions avant de les utiliser.
 
 > Un maximum de fonctions sont réécrites pour éviter ce problème (comme `my_strlen`).
@@ -60,7 +62,7 @@
     - Bases **inférieures** à 10 (dossier **_2_to_10_**) :
 
         - **Prototype :** `char *base10_to_inferior_base(unsigned long long nb, int base);`
-        - **Prototype :** `unsigned long long return_to_base10(char *nb, int base);`
+        - **Prototype :** `unsigned long long return_to_decimal(char *nb, int base);`
 
     - Bases **supérieures** à 10 (dossier **_10_to_16_**) :
 
@@ -71,7 +73,7 @@
     
     - `base10_to_inferior_base` et `base10_to_superior_base` prennent un nombre et une base, puis renvoie le résultat sous forme de chaîne de caractères.
 
-    - `return_to_base10` prend une chaîne de caractères (le nombre dans une certaine base) et la base en question, puis renvoie le nombre en base 10 sous forme d'entiers.
+    - `return_to_decimal` et `return_to_base10` prennent une chaîne de caractères (le nombre dans une certaine base) et la base en question, puis renvoie le nombre en base 10 sous forme d'entiers.
 
     - Attention, aucune gestion d'erreur n'est faite sur les paramètres donnés aux fonctions.
 
