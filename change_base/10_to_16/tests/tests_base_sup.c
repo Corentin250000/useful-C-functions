@@ -9,8 +9,6 @@
 #include <criterion/criterion.h>
 #include <criterion/redirect.h>
 
-
-
 Test(my_strlen, size_str_valid)
 {
     char *test = "Hello";
@@ -30,8 +28,6 @@ Test(my_strlen, size_str_empty)
     cr_assert(my_strlen("") == 0);
 }
 
-
-
 Test(power, positive_power)
 {
     cr_assert(power(5, 3) == 125);
@@ -47,8 +43,6 @@ Test(power, null_power)
     cr_assert(power(5, 0) == 1);
 }
 
-
-
 Test(max_power, basic_test)
 {
     cr_assert(max_power(84, 2) == 7);
@@ -63,8 +57,6 @@ Test(max_power, avanced_test)
 {
     cr_assert(max_power(84, 9) == 3);
 }
-
-
 
 Test(character_to_put, char0)
 {
@@ -145,8 +137,6 @@ Test(character_to_put, charF)
 {
     cr_assert(character_to_put(15) == 'F');
 }
-
-
 
 Test(value_to_add, base2)
 {
@@ -343,8 +333,6 @@ Test(value_to_add, base16)
     cr_assert(value_to_add(16, 'F', 5) == 15728640);
 }
 
-
-
 Test(base10_to_superior_base, base10)
 {
     cr_assert_str_eq(base10_to_superior_base(1368946, 10), "1368946");
@@ -379,8 +367,6 @@ Test(base10_to_superior_base, base16)
 {
     cr_assert_str_eq(base10_to_superior_base(1368946, 16), "14E372");
 }
-
-
 
 Test(return_to_base10, base10)
 {

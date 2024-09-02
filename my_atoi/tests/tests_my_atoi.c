@@ -28,8 +28,6 @@ Test(my_strlen, size_str_empty)
     cr_assert(my_strlen("") == 0);
 }
 
-
-
 Test(my_atoi, basic_test)
 {
     cr_assert(my_atoi("1234") == 1234);

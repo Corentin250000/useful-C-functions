@@ -28,8 +28,6 @@ Test(my_strlen, size_str_empty)
     cr_assert(my_strlen("") == 0);
 }
 
-
-
 Test(my_strdup, str_equals)
 {
     cr_assert_str_eq(my_strdup("Hello World!"), "Hello World!");
@@ -39,8 +37,6 @@ Test(my_strdup, good_length)
 {
     cr_assert(my_strlen(my_strdup("Hello World!")) == 12);
 }
-
-
 
 Test(int_to_char, one_number)
 {
@@ -91,8 +87,6 @@ Test(int_to_char, all_numbers)
 {
     cr_assert_str_eq(int_to_char(1895145675), "1895145675");
 }
-
-
 
 Test(remove_zeros, zero)
 {

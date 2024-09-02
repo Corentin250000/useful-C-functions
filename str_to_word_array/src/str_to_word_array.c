@@ -37,7 +37,7 @@ int nb_word(char const *str, char *authorized)
     for (; str[i] != '\0'; i++) {
         if (i != 0 && !is_authorized(str[i - 1], authorized))
             continue;
-        alphanum += is_authorized(str[i], authorized) ? 1 : -alphanum;
+        alphanum += is_authorized(str[i], authorized) ? 1 : - alphanum;
         if (str[i + 1] == '\0')
             alphanum = 0;
         if (alphanum == 0)

@@ -28,8 +28,6 @@ Test(my_strlen, size_str_empty)
     cr_assert(my_strlen("") == 0);
 }
 
-
-
 Test(power, positive_power)
 {
     cr_assert(power(5, 3) == 125);
@@ -45,8 +43,6 @@ Test(power, null_power)
     cr_assert(power(5, 0) == 1);
 }
 
-
-
 Test(max_power, basic_test)
 {
     cr_assert(max_power(84, 2) == 7);
@@ -61,8 +57,6 @@ Test(max_power, avanced_test)
 {
     cr_assert(max_power(84, 9) == 3);
 }
-
-
 
 Test(base10_to_inferior_base, base2)
 {
@@ -108,8 +102,6 @@ Test(base10_to_inferior_base, base10)
 {
     cr_assert(base10_to_inferior_base(4, 10), "84");
 }
-
-
 
 Test(return_to_decimal, base2)
 {
