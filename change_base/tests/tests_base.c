@@ -401,3 +401,73 @@ Test(return_to_base10, base16)
 {
     cr_assert(return_to_base10("14E372", 16) == 1368946);
 }
+
+Test(base10_to_base, base10_negative)
+{
+    cr_assert_str_eq(base10_to_base(-1368946, 10), "-1368946");
+}
+
+Test(base10_to_base, base11_negative)
+{
+    cr_assert_str_eq(base10_to_base(-1368946, 11), "-855567");
+}
+
+Test(base10_to_base, base12_negative)
+{
+    cr_assert_str_eq(base10_to_base(-1368946, 12), "-56026A");
+}
+
+Test(base10_to_base, base13_negative)
+{
+    cr_assert_str_eq(base10_to_base(-1368946, 13), "-38C137");
+}
+
+Test(base10_to_base, base14_negative)
+{
+    cr_assert_str_eq(base10_to_base(-1368946, 14), "-278C5C");
+}
+
+Test(base10_to_base, base15_negative)
+{
+    cr_assert_str_eq(base10_to_base(-1368946, 15), "-1C0931");
+}
+
+Test(base10_to_base, base16_negative)
+{
+    cr_assert_str_eq(base10_to_base(-1368946, 16), "-14E372");
+}
+
+Test(return_to_base10, base10_negative)
+{
+    cr_assert(return_to_base10("-1368946", 10) == -1368946);
+}
+
+Test(return_to_base10, base11_negative)
+{
+    cr_assert(return_to_base10("-855567", 11) == -1368946);
+}
+
+Test(return_to_base10, base12_negative)
+{
+    cr_assert(return_to_base10("-56026A", 12) == -1368946);
+}
+
+Test(return_to_base10, base13_negative)
+{
+    cr_assert(return_to_base10("-38C137", 13) == -1368946);
+}
+
+Test(return_to_base10, base14_negative)
+{
+    cr_assert(return_to_base10("-278C5C", 14) == -1368946);
+}
+
+Test(return_to_base10, base15_negative)
+{
+    cr_assert(return_to_base10("-1C0931", 15) == -1368946);
+}
+
+Test(return_to_base10, base16_negative)
+{
+    cr_assert(return_to_base10("-14E372", 16) == -1368946);
+}

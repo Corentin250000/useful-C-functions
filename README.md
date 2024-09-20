@@ -59,10 +59,10 @@
 
 3. ### change_base
 
-    - **Prototype :** `char *base10_to_base(unsigned long long nb, int base);`
-    - **Prototype :** `unsigned long long return_to_base10(char *nb, int base);`
+    - **Prototype :** `char *base10_to_base(long long nb, int base);`
+    - **Prototype :** `long long return_to_base10(char *nb, int base);`
 
-    - Change la base d'un nombre positif donné (base comprise entre 2 et 16).
+    - Change la base d'un nombre donné (base comprise entre 2 et 16).
     
     - `base10_to_base` prend un **nombre** et une **base**, puis renvoie le résultat sous forme de **chaîne de caractères**.
 

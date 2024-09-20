@@ -10,3 +10,4 @@ coverage_filtered.info
 test
 out/
 *.o
+main.c
