@@ -24,6 +24,8 @@
 
 - [strings_are_equals](#strings_are_equals)
 
+- [sort_int](#sort_int)
+
 ## Les fonctions
 
 **Toutes les fonctions respectent le _coding style_ (PDF explicatif fourni dans son dossier à la racine) et ne présentent normalement aucune erreur _Valgrind_.**
@@ -98,5 +100,13 @@
     - **Compare** deux chaînes de caractères pour savoir si elles sont **égales**. La fonction retourne **1** si elles sont égales, sinon elle retourne **0**.
 
     - **Attention**, si les deux chaînes de caractères ne sont pas de **tailles égales**, la fonctions retournera **0**. Exemple, si **une des deux** chaînes de caractères est **vide**. Par contre, si **les deux sont vides**, la fonction retournera **1**.
+
+7. ### sort_int
+
+    - **Prototype :** `void sort_int(int *array, int size);`
+
+    - Trie le tableau d'entiers passé en paramètre par **ordre croissant**.
+
+    - **Attention** à bien donner la bonne taille de tableau, car si vous donnez une taille **inférieure** à la taille réelle, votre tableau **ne sera pas entièrement trié**. Par contre dans le cas contraire, si la taille donné est **supérieure** à la taille réelle, vous aurez des problèmes **plus graves** pour votre programme.
 
 [Retourner en haut](#useful-c-functions)
