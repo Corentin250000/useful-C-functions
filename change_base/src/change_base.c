@@ -7,7 +7,7 @@
 
 #include <stdlib.h>
 
-#include "../includes/change_base_superior.h"
+#include "../includes/change_base.h"
 
 int my_strlen(char *str)
 {
@@ -38,7 +38,7 @@ int max_power(int nb, int base)
     return result;
 }
 
-char *base10_to_superior_base(unsigned long long nb, int base)
+char *base10_to_base(unsigned long long nb, int base)
 {
     char *result;
     int temp = nb;

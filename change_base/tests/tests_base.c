@@ -5,9 +5,8 @@
 ** units tests
 */
 
-#include "../includes/change_base_superior.h"
+#include "../includes/change_base.h"
 #include <criterion/criterion.h>
-#include <criterion/redirect.h>
 
 Test(my_strlen, size_str_valid)
 {
@@ -333,39 +332,39 @@ Test(value_to_add, base16)
     cr_assert(value_to_add(16, 'F', 5) == 15728640);
 }
 
-Test(base10_to_superior_base, base10)
+Test(base10_to_base, base10)
 {
-    cr_assert_str_eq(base10_to_superior_base(1368946, 10), "1368946");
+    cr_assert_str_eq(base10_to_base(1368946, 10), "1368946");
 }
 
-Test(base10_to_superior_base, base11)
+Test(base10_to_base, base11)
 {
-    cr_assert_str_eq(base10_to_superior_base(1368946, 11), "855567");
+    cr_assert_str_eq(base10_to_base(1368946, 11), "855567");
 }
 
-Test(base10_to_superior_base, base12)
+Test(base10_to_base, base12)
 {
-    cr_assert_str_eq(base10_to_superior_base(1368946, 12), "56026A");
+    cr_assert_str_eq(base10_to_base(1368946, 12), "56026A");
 }
 
-Test(base10_to_superior_base, base13)
+Test(base10_to_base, base13)
 {
-    cr_assert_str_eq(base10_to_superior_base(1368946, 13), "38C137");
+    cr_assert_str_eq(base10_to_base(1368946, 13), "38C137");
 }
 
-Test(base10_to_superior_base, base14)
+Test(base10_to_base, base14)
 {
-    cr_assert_str_eq(base10_to_superior_base(1368946, 14), "278C5C");
+    cr_assert_str_eq(base10_to_base(1368946, 14), "278C5C");
 }
 
-Test(base10_to_superior_base, base15)
+Test(base10_to_base, base15)
 {
-    cr_assert_str_eq(base10_to_superior_base(1368946, 15), "1C0931");
+    cr_assert_str_eq(base10_to_base(1368946, 15), "1C0931");
 }
 
-Test(base10_to_superior_base, base16)
+Test(base10_to_base, base16)
 {
-    cr_assert_str_eq(base10_to_superior_base(1368946, 16), "14E372");
+    cr_assert_str_eq(base10_to_base(1368946, 16), "14E372");
 }
 
 Test(return_to_base10, base10)

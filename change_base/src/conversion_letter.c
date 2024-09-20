@@ -7,7 +7,7 @@
 
 #include <stdlib.h>
 
-#include "../includes/change_base_superior.h"
+#include "../includes/change_base.h"
 
 char character_to_put(int res_mod)
 {

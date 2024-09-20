@@ -59,21 +59,14 @@
 
 3. ### change_base
 
-    - Bases **inférieures** à 10 (dossier **_2_to_10_**) :
-
-        - **Prototype :** `char *base10_to_inferior_base(unsigned long long nb, int base);`
-        - **Prototype :** `unsigned long long return_to_decimal(char *nb, int base);`
-
-    - Bases **supérieures** à 10 (dossier **_10_to_16_**) :
-
-        - **Prototype :** `char *base10_to_superior_base(unsigned long long nb, int base);`
-        - **Prototype :** `unsigned long long return_to_base10(char *nb, int base);`
+    - **Prototype :** `char *base10_to_base(unsigned long long nb, int base);`
+    - **Prototype :** `unsigned long long return_to_base10(char *nb, int base);`
 
     - Change la base d'un nombre positif donné (base comprise entre 2 et 16).
     
-    - `base10_to_inferior_base` et `base10_to_superior_base` prennent un nombre et une base, puis renvoie le résultat sous forme de chaîne de caractères.
+    - `base10_to_base` prend un **nombre** et une **base**, puis renvoie le résultat sous forme de **chaîne de caractères**.
 
-    - `return_to_decimal` et `return_to_base10` prennent une chaîne de caractères (le nombre dans une certaine base) et la base en question, puis renvoie le nombre en base 10 sous forme d'entiers.
+    - `return_to_base10` prend une **chaîne de caractères** (le nombre dans une certaine base) et la **base** en question, puis renvoie le nombre en base 10 sous forme **d'entiers**.
 
     - Attention, aucune gestion d'erreur n'est faite sur les paramètres donnés aux fonctions.
 

@@ -5,10 +5,12 @@
 ## Makefile
 ##
 
-SRC	=	src/change_base_inferior.c
+SRC	=	src/change_base.c	\
+		src/conversion_letter.c
 
-SRC_UNIT_TESTS	=	src/change_base_inferior.c	\
-					tests/tests_base_inf.c
+SRC_UNIT_TESTS	=	src/change_base.c	\
+					src/conversion_letter.c	\
+					tests/tests_base.c
 
 OBJ	=	$(SRC:.c=.o)
 
@@ -45,7 +47,7 @@ fclean:	clean
 		rm -rf out
 		rm -f vgcore.*
 
-re:		fclean
+re:		fclean all
 
 tests_run:	$(OBJ_UNIT_TESTS)
 		$(CC) -o unit_tests $(OBJ_UNIT_TESTS) $(FLAGS) $(CFLAGS) $(LIBS)
