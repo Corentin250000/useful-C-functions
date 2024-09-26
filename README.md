@@ -2,7 +2,7 @@
 
 **⚠️ Si vous êtes étudiant _EPITECH_, N'UTILISEZ PAS ces fonctions, cela pourrait être considéré comme de la triche.**
 
-> Je pense que récupérer un -84 sur votre projet pour ça, cela ne vaut pas le coup 😉.
+> Je pense que récupérer une note négative sur votre projet pour ça, cela ne vaut pas le coup 😉.
 
 **Cependant, si vous décidez d'utiliser ces fonctions, je me dédommage de toutes responsabilités si vous êtes pris la main dans le sac.**
 
